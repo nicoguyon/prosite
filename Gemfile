@@ -6,11 +6,10 @@ gem 'jquery-rails'
 
 
 group :production do
-	gem 'pg'
+  gem 'pg'
 end
-
-group :development, :text do
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
 end
 
 
