@@ -20,6 +20,7 @@ Prosite::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
@@ -60,6 +61,7 @@ Prosite::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
